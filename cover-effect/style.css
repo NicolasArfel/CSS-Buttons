@@ -1,0 +1,57 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body's base */
+body {
+background: black;
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100vh;
+font-family: 'Playfair Display';
+}
+
+/* button style */
+.cover-btn {
+    background: none;
+    width: 250px;
+    height: 60px;
+    border: 4px solid #fac100;
+    border-radius: 10px;
+    color: #fac100;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+/* change the font color on hover */
+.cover-btn:hover {
+    color: black;
+}
+
+/* change the button background color */
+.cover-btn::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    background-color: #fac100;
+    z-index: -1; /* put the background color behind the text*/
+    transition: .5s linear;
+}
+
+/* size of the background button color */
+.cover-btn:hover::before {
+    width: 242px;
+}
