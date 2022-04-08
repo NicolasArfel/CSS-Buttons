@@ -1,0 +1,43 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body base */
+body {
+background: #171205;
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100vh;
+font-family: 'Playfair Display';
+}
+
+/* button style */
+.button {
+ background: #fac100;
+ border: none;
+ width: 200px;
+ height: 60px;
+ font-size: 25px;
+ font-weight: 700;
+ color: #171205;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+/* light on hover with a simple box-shadow */
+.button:hover {
+  background: #f7d874;
+  color: #fac100;
+  box-shadow: 0 0 10px #fac100,
+              0 0 25px #fac100,
+              0 0 50px #fac100,
+              0 0 100px #fac100;
+  
+}
