@@ -30,12 +30,20 @@ body {
   color: #ee4040;
   font-size: 105px;
 }
-.button:checked{
-  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-              10px 10px 15px rgba(70,70,70,0.12),
-              inset -10px -10px 15px rgba(255,255,255,0.5),
-              inset 10px 10px 15px rgba(34, 160, 66, 0.12);
-}
+
 .button:checked:after{
   color: #15e38a;
+}
+body.ok{
+  background: black;
+}
+.button.ok {
+  background: #ececec;
+  box-shadow: 0 0 10px #afe26c,
+              0 0 25px #afe26c,
+              0 0 50px #afe26c,
+              0 0 100px #afe26c,
+              inset -10px -10px 15px rgba(255,255,255,0.5),
+              inset 10px 10px 15px rgba(34, 160, 66, 0.12);
+  
 }
