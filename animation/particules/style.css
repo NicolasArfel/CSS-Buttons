@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --animation-time: 4s; 
+  }
+
+body {
+    background: black;    
+}
+
+.particles {
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    opacity: 0;
+    animation: appear 5s linear infinite; 
+    animation-delay: var(--animation-time);
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        box-shadow: 0 0 10px white,
+        0 0 25px white,
+        0 0 50px white;
+    }
+    25%{
+        opacity: 0.5;
+        box-shadow: 0 0 10px white,
+        0 0 25px white,
+        0 0 50px white;
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 10px white,
+                    0 0 25px white,
+                    0 0 50px white;
+                    
+    }
+    75% {
+        opacity: 0.5;
+        box-shadow: 0 0 10px white,
+                    0 0 25px white,
+                    0 0 50px white;
+                    
+    }
+    100% {
+        opacity: 0.2;
+        box-shadow: 0 0 10px white,
+        0 0 25px white,
+        0 0 50px white;
+    }
+}
